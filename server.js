@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 // Rota para receber dados de um host via POST
-app.post('/receber-dados', (req, res) => {
+app.post('/', (req, res) => {
   const dadosRecebidos = req.body;
   console.log('📥 Dados recebidos:', dadosRecebidos);
 
